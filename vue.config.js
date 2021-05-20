@@ -1,5 +1,7 @@
 module.exports = {
   lintOnSave: false,
   runtimeCompiler: true,
-  disableHostCheck: true
+  "devServer": {
+    "public": "example.com"
+  }
 }
