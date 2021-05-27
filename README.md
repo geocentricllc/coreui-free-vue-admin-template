@@ -3,8 +3,10 @@
 [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=CoreUI%20-%20Free%20Vue%20Admin%20Template%20&url=http://coreui.io/vue/&hashtags=bootstrap,admin,template,dashboard,panel,free,angular,react,vue)
 [![NPM][npm-coreui-vue-badge-latest]][npm-coreui-vue]
 [![Downloads](https://img.shields.io/npm/dm/@coreui/vue.svg?style=flat-square)][coreui]
-[![Jest](https://img.shields.io/badge/Jest-^24.9.0-blue.svg?style=flat-square)][coreui]
-[![Vue](https://img.shields.io/badge/Vue-^2.6.10-brightgreen.svg?style=flat-square)][coreui]
+[![Vue](https://img.shields.io/badge/Vue-^2.6.11-brightgreen.svg?style=flat-square)][coreui]
+
+[![Project check](https://github.com/coreui/coreui-free-vue-admin-template/actions/workflows/project-check.yml/badge.svg)](https://github.com/coreui/coreui-free-vue-admin-template/actions/workflows/project-check.yml)
+[![Daily project check](https://github.com/coreui/coreui-free-vue-admin-template/actions/workflows/daily-project-check.yml/badge.svg)](https://github.com/coreui/coreui-free-vue-admin-template/actions/workflows/daily-project-check.yml)
 
 [npm-coreui-vue]: https://www.npmjs.com/package/@coreui/vue
 [npm-coreui-vue-badge-latest]: https://img.shields.io/npm/v/@coreui/vue/latest?style=flat-square&color=brightgreen  
@@ -97,7 +99,7 @@ Have a bug or a feature request? [Please open a new issue](https://github.com/co
 
 ### Contributing
 
-Please read through our [contributing guidelines](https://github.com/coreui/coreui-free-vue-admin-template/blob/v3-next/CONTRIBUTING.md). Included are directions for opening issues, coding standards, and notes on development.
+Please read through our [contributing guidelines](https://github.com/coreui/coreui-free-vue-admin-template/blob/master/.github/CONTRIBUTING.md). Included are directions for opening issues, coding standards, and notes on development.
 
 ### Versioning
 
@@ -111,24 +113,27 @@ CoreUI is built on top of Bootstrap 4 and supports popular frameworks.
 
 #### Free version products
 
-- [CoreUI Free Vue Laravel Admin Template](https://github.com/coreui/coreui-free-vue-laravel-admin-template)
-
-- [CoreUI Free Laravel Admin Template](https://github.com/coreui/coreui-free-laravel-admin-template)
-
-- [CoreUI Free Bootstrap Admin Template](https://github.com/coreui/coreui-free-bootstrap-admin-template)
-
-- [CoreUI Free Angular 2+ Admin Template](https://github.com/coreui/coreui-free-angular-admin-template)
-
-- [CoreUI Free React.js Admin Template](https://github.com/coreui/coreui-free-react-admin-template)
+* [CoreUI Free Bootstrap Admin Template](https://github.com/coreui/coreui-free-bootstrap-admin-template)
+* [CoreUI Free Angular Admin Template](https://github.com/coreui/coreui-free-angular-admin-template)
+* [CoreUI Free Laravel Admin Template](https://github.com/coreui/coreui-free-laravel-admin-template)
+* [CoreUI Free React.js Admin Template](https://github.com/coreui/coreui-free-react-admin-template)
+* [CoreUI Free Vue.js Admin Template](https://github.com/coreui/coreui-free-vue-admin-template)
+* [CoreUI Free Vue.js + Laravel Admin Template](https://github.com/coreui/coreui-free-vue-laravel-admin-template)
 
 #### Pro version products
 
-- 💪  [CoreUI Pro Vue Admin Template](https://coreui.io/pro/vue)
-- 💪  [CoreUI Pro Laravel Vue Admin Template](https://coreui.io/pro/laravel)
-- 💪  [CoreUI Pro Laravel Admin Template](https://coreui.io/pro/laravel)
-- 💪  [CoreUI Pro Bootstrap Admin Template](https://coreui.io/pro/)
-- 💪  [CoreUI Pro Angular Admin Template](https://coreui.io/pro/angular)
-- 💪  [CoreUI Pro React Admin Template](https://coreui.io/pro/react)
+* 💪  [CoreUI Pro Bootstrap Admin Template](https://coreui.io/pro/)
+* 💪  [CoreUI Pro Angular Admin Template](https://coreui.io/pro/angular)
+* 💪  [CoreUI Pro Laravel Admin Template](https://coreui.io/pro/laravel)
+* 💪  [CoreUI Pro React Admin Template](https://coreui.io/pro/react)
+* 💪  [CoreUI Pro Vue Admin Template](https://coreui.io/pro/vue)
+* 💪  [CoreUI Pro Vue + Laravel Admin Template](https://coreui.io/pro/vue-laravel)
+
+## CoreUI PRO Vue.js Admin Templates
+
+| Default Theme | Legacy Theme | Dark Layout |
+| --- | --- | --- |
+| [![CoreUI Pro Bootstrap Admin Template](https://coreui.io/images/mockups/mockup_3_1_default.png)](https://coreui.io/pro/vue/) | [![CoreUI Pro Bootstrap Admin Template](https://coreui.io/images/mockups/mockup_3_1_legacy.png)](https://coreui.io/pro/vue/)| [![CoreUI Pro Bootstrap Admin Template](https://coreui.io/images/mockups/mockup_3_1_dark.png)](https://coreui.io/pro/vue/)
 
 ## Community
 
@@ -146,11 +151,9 @@ Some of projects created by community but not maintained by CoreUI team.
 
 ## Copyright and license
 
-Copyright 2019 creativeLabs Łukasz Holeczek. Code released under [the MIT license](https://github.com/coreui/coreui-free-vue-admin-template/blob/master/LICENSE).
+Copyright 2020 creativeLabs Łukasz Holeczek. Code released under [the MIT license](https://github.com/coreui/coreui-free-vue-admin-template/blob/master/LICENSE).
 There is only one limitation - you cannot re-distribute the `CoreUI` as stock nor if you modify the `CoreUI`. In the past we faced some problems with persons who tried to sell `CoreUI` based templates.
 
 ## Support CoreUI Development
 
-CoreUI is an MIT licensed open source project and completely free to use. However, the amount of effort needed to maintain and develop new features for the project is not sustainable without proper financial backing. You can support development by donating on [PayPal](https://www.paypal.me/holeczek), buying [CoreUI Pro Version](https://coreui.io/pro) or buying one of our [premium admin templates](https://genesisui.com/?support=1).
-
-If you are a business that is building core products using CoreUI, we are open to conversations regarding custom sponsorship / consulting arrangements. Get in touch on [Twitter](https://twitter.com/lukaszholeczek).
+CoreUI is an MIT licensed open source project and completely free to use. However, the amount of effort needed to maintain and develop new features for the project is not sustainable without proper financial backing. You can support development by buying [PRO version](https://coreui.io/pro/).

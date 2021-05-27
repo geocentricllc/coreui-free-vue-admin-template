@@ -1,19 +1,19 @@
 <template>
   <div class="c-app">
     <TheSidebar/>
-    <div class="c-wrapper">
+    <CWrapper>
       <TheHeader/>
       <div class="c-body">
         <main class="c-main">
           <CContainer fluid>
-            <transition name="fade">
-              <router-view></router-view>
+            <transition name="fade" mode="out-in">
+              <router-view :key="$route.path"></router-view>
             </transition>
           </CContainer>
         </main>
       </div>
       <TheFooter/>
-    </div>
+    </CWrapper>
   </div>
 </template>
 

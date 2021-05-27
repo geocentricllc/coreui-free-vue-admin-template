@@ -6,7 +6,7 @@ import {
   cibTumblr,
   cibXing,
   cibGithub,
-  cibStackOverflow,
+  cibStackoverflow,
   cibYoutube,
   cibDribbble,
   cibInstagram,
@@ -79,9 +79,11 @@ import {
   cilXCircle
 
 } from '@coreui/icons'
+import { logo } from './logo'
 
 export const iconsSet = Object.assign(
   {},
+  { logo },
   {
     cilArrowRight,
     cilBan,
@@ -145,7 +147,7 @@ export const iconsSet = Object.assign(
     cibTumblr,
     cibXing,
     cibGithub,
-    cibStackOverflow,
+    cibStackoverflow,
     cibYoutube,
     cibDribbble,
     cibInstagram,

@@ -2,17 +2,30 @@
   <CSidebar 
     fixed 
     :minimize="minimize"
-    :show.sync="show"
+    :show="show"
+    @update:show="(value) => $store.commit('set', ['sidebarShow', value])"
   >
-    <CSidebarBrand 
-      :imgFull="{ width: 118, height: 46, alt: 'Logo', src: 'img/brand/coreui-base-white.svg'}"
-      :imgMinimized="{ width: 118, height: 46, alt: 'Logo', src: 'img/brand/coreui-signet-white.svg'}"
-      :wrappedInLink="{ href: 'https://coreui.io/', target: '_blank'}"
-    />
-    <CRenderFunction flat :content-to-render="nav"/>
+    <CSidebarBrand class="d-md-down-none" to="/">
+      <CIcon 
+        class="c-sidebar-brand-full" 
+        name="logo" 
+        size="custom-size" 
+        :height="35" 
+        viewBox="0 0 556 134"
+      />
+      <CIcon 
+        class="c-sidebar-brand-minimized" 
+        name="logo" 
+        size="custom-size" 
+        :height="35" 
+        viewBox="0 0 110 134"
+      />
+    </CSidebarBrand>
+
+    <CRenderFunction flat :content-to-render="$options.nav"/>
     <CSidebarMinimizer
       class="d-md-down-none"
-      @click.native="minimize = !minimize"
+      @click.native="$store.commit('set', ['sidebarMinimize', !minimize])"
     />
   </CSidebar>
 </template>
@@ -22,22 +35,14 @@ import nav from './_nav'
 
 export default {
   name: 'TheSidebar',
-  data () {
-    return {
-      minimize: false,
-      nav,
-      show: 'responsive'
+  nav,
+  computed: {
+    show () {
+      return this.$store.state.sidebarShow 
+    },
+    minimize () {
+      return this.$store.state.sidebarMinimize 
     }
-  },
-  mounted () {
-    this.$root.$on('toggle-sidebar', () => {
-      const sidebarOpened = this.show === true || this.show === 'responsive'
-      this.show = sidebarOpened ? false : 'responsive'
-    })
-    this.$root.$on('toggle-sidebar-mobile', () => {
-      const sidebarClosed = this.show === 'responsive' || this.show === false
-      this.show = sidebarClosed ? true : 'responsive'
-    })
   }
 }
 </script>
